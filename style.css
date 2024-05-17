@@ -1,0 +1,99 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+.custom-nav{
+    text-align: center;
+    background-color: black;
+    border-bottom-right-radius: 50px;
+    height: 5vh;
+    width: 25%;
+    align-content: center;
+    position: fixed;
+    
+}
+.custom-nav a{
+    margin: 10px;
+    text-decoration: none;
+    color:white;
+    text-transform:capitalize;
+    font-family: "Poetsen One", sans-serif;
+}
+.intestazione{
+    background-image: url(./media/Carbonara\ Header.jpeg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    color: white;
+    font-size: 100px;
+    font-family: "Poetsen One", sans-serif;
+}
+.custom-h2{
+    text-align: center;
+    margin:20px 0px 20px 0px;
+    background-color: black;
+    color:white;
+}
+.col h3{
+    text-align: center;
+    margin-top:10px;
+    background-color: blanchedalmond;
+}
+
+.col button{
+    background-color: black;
+    color: white;
+    border-bottom-right-radius: 25%;
+    width: 100%;
+    margin-bottom:20px;
+    justify-content: start;
+    bottom:0px
+}
+.custom-footer{
+    height: 5vh;
+    background-color:blanchedalmond;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.custom-footer p{
+   margin-top:10px
+}
+
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+@media screen and (max-width: 1024px){
+    .custom-nav{
+     width: 80%;
+     position: fixed;
+     top:0px;
+ }
+
+@media screen and (max-width: 600px){
+   .custom-nav{
+    width: 80%;
+    position: fixed;
+    top:0px;
+}
+.intestazione{
+    height: 50vh;
+}
+h1{
+    font-size: 40px;
+}
+}
